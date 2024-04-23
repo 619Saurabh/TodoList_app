@@ -15,5 +15,5 @@ Steps to run application:
 
 4.Run command 'npm run dev'.
 
-App URL: https://bishttechblogs.netlify.app/
+App URL: https://bishttodoapp.netlify.app/
 
