@@ -41,11 +41,15 @@ function App() {
   }
 
   const handleDelete= (e, id)=>{  
-    let newTodos = todos.filter(item=>{
-      return item.id!==id
-    }); 
-    setTodos(newTodos) 
-    saveToLS()
+    let index = todos.findIndex(item=>item.id ===id);
+    let delTodo = todos[index].todo;
+    let confirmMsg = `Are you sure you want to delete ${delTodo} from todo list?`;
+
+    confirm(confirmMsg) && deleteTodo();
+    
+    function deleteTodo(){
+    let newTodos = todos.filter(item => item.id !== id);                                  
+     setTodos(newTodos);
   }
 
   const handleAdd= ()=>{
