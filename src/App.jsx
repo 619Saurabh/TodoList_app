@@ -51,6 +51,7 @@ function App() {
     let newTodos = todos.filter(item => item.id !== id);                                  
      setTodos(newTodos);
   }
+}
 
   const handleAdd= ()=>{
     setTodos([...todos, {id: uuidv4(), todo, isCompleted: false}])
