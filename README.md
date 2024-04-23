@@ -13,7 +13,7 @@ Steps to run application:
 
 3.Run command 'npm install'.
 
-4.Run command 'npm start'.
+4.Run command 'npm run dev'.
 
 App URL: https://bishttechblogs.netlify.app/
 
